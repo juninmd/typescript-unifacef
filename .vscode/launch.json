@@ -10,13 +10,28 @@
             "skipFiles": [
                 "<node_internals>/**/*.js"
             ],
-            "name": "Rodar via TS-Node",
+            "name": "Index [TS-Node]",
             "runtimeArgs": [
                 "-r",
                 "ts-node/register"
             ],
             "args": [
                 "${workspaceFolder}/index.ts"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**/*.js"
+            ],
+            "name": "Teste Star Wars [TS-Node]",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceFolder}/teste.ts"
             ]
         },
     ]
