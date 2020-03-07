@@ -23,7 +23,8 @@
             "type": "node",
             "request": "launch",
             "skipFiles": [
-                "<node_internals>/**/*.js"
+                "<node_internals>/**/*.js",
+                "node_modules/**/*.js",
             ],
             "name": "Teste Star Wars [TS-Node]",
             "runtimeArgs": [
@@ -32,6 +33,22 @@
             ],
             "args": [
                 "${workspaceFolder}/teste.ts"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**/*.js",
+                "node_modules/**/*.js",
+            ],
+            "name": "Teste Github [TS-Node]",
+            "runtimeArgs": [
+                "-r",
+                "ts-node/register"
+            ],
+            "args": [
+                "${workspaceFolder}/github-api.ts"
             ]
         },
     ]
