@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'https://swapi.co/api/';
+const baseURL = 'https://swapi.dev/api/';
 
 export const getFilms = async (): Promise<ResultFilms[]> => {
     try {
